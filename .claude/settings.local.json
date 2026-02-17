@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(powershell -Command \"Select-String -Path ''C:\\\\laragon\\\\www\\\\laravoice\\\\storage\\\\logs\\\\laravel.log'' -Pattern ''Voice assistant error|ElevenLabs|transcribe'' | Select-Object -Last 30\")",
+      "Bash(cat:*)",
+      "Bash(powershell -Command \"Get-Content ''C:\\\\laragon\\\\www\\\\laravoice\\\\storage\\\\logs\\\\laravel.log'' | Select-Object -Last 30\")"
+    ]
+  }
+}
