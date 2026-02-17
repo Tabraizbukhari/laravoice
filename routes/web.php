@@ -11,9 +11,10 @@ use Laravel\Fortify\Features;
 //     ]);
 // })->name('home');
 
-// Route::get('dashboard', function () {
-//     return Inertia::render('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('dashboard', function () {
+    return abort(404);
+    // return Inertia::render('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/', [VoiceAssistantController::class, 'index'])->name('voice.index');
 Route::post('voice/process', [VoiceAssistantController::class, 'process'])->name('voice.process');
