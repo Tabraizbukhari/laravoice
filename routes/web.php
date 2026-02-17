@@ -17,6 +17,7 @@ use Laravel\Fortify\Features;
 
 Route::get('/', [VoiceAssistantController::class, 'index'])->name('voice.index');
 Route::post('voice/process', [VoiceAssistantController::class, 'process'])->name('voice.process');
+Route::post('voice/ask', [VoiceAssistantController::class, 'ask'])->name('voice.ask');
 Route::post('voice/speak', [VoiceAssistantController::class, 'speak'])->name('voice.speak');
 Route::get('voice/history', [VoiceAssistantController::class, 'history'])->name('voice.history');
 Route::delete('voice/history', [VoiceAssistantController::class, 'clearHistory'])->name('voice.clear-history');

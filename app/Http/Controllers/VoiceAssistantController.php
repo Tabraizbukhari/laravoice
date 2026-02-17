@@ -99,6 +99,41 @@ class VoiceAssistantController extends Controller
     }
 
     /**
+     * Process a text question: generate response and convert to speech.
+     */
+    public function ask(Request $request): JsonResponse
+    {
+        $request->validate([
+            'question' => 'required|string|max:1000',
+        ]);
+
+        try {
+            $question = $request->input('question');
+
+            $response = $this->voiceAssistant->generateResponse($question);
+            $audioBase64 = $this->voiceAssistant->textToSpeech($response);
+
+            return response()->json([
+                'success' => true,
+                'query' => $question,
+                'response' => $response,
+                'audio' => $audioBase64,
+                'history' => $this->voiceAssistant->getConversationHistory(),
+            ]);
+        } catch (\Exception $e) {
+            Log::error('Voice assistant error', [
+                'message' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+
+            return response()->json([
+                'success' => false,
+                'error' => 'An error occurred while processing your question.',
+            ], 500);
+        }
+    }
+
+    /**
      * Generate speech from text.
      */
     public function speak(Request $request): JsonResponse
