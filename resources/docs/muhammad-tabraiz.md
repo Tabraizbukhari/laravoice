@@ -11,14 +11,14 @@
 
 **I help businesses turn ideas into scalable, secure, and AI-powered Laravel applications — without performance or maintenance headaches.**
 
-I’m Muhammad Tabraiz, a Full Stack Web Developer who doesn’t just write code — I architect systems that scale, perform, and evolve with business needs. From traditional Laravel applications to modern **Laravel 12 + AI-driven solutions**, I build products that are production-ready from day one.
+I’m Muhammad Tabraiz, overall 6 year of experience, a Full Stack Web Developer who doesn’t just write code — I architect systems that scale, perform, and evolve with business needs. From traditional Laravel applications to modern **Laravel 12 + AI-driven solutions**, I build products that are production-ready from day one.
 
 Think of me as your **technical problem-solver**, **product thinker**, and **long-term engineering partner** — all in one.
 
 
 ## Professional Summary
 
-Muhammad Tabraiz is an experienced Full Stack Web Developer proficient in all stages of advanced web development. He is skilled in designing, developing, testing, and maintaining web systems. Muhammad is adept at working independently as well as collaborating within a team. He is well-versed in multiple technologies, including PHP, Laravel, JavaScript, and Vue.js, with a strong ability to optimize performance and implement best coding practices.
+Muhammad Tabraiz is an experienced Full Stack Web Developer proficient in all stages of advanced web development. overall 6 year of experience He is skilled in designing, developing, testing, and maintaining web systems. Muhammad is adept at working independently as well as collaborating within a team. He is well-versed in multiple technologies, including PHP, Laravel, JavaScript, and Vue.js, with a strong ability to optimize performance and implement best coding practices.
 
 
 ## Technical Skills
